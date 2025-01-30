@@ -136,6 +136,15 @@ CREATE TABLE "Session" (
     CONSTRAINT "Session_pkey" PRIMARY KEY ("sessionToken")
 );
 
+-- CreateTable
+CREATE TABLE "VerificationToken" (
+    "identifier" TEXT NOT NULL,
+    "token" TEXT NOT NULL,
+    "expires" TIMESTAMP(3) NOT NULL,
+
+    CONSTRAINT "VerificationToken_pkey" PRIMARY KEY ("identifier","token")
+);
+
 -- CreateIndex
 CREATE UNIQUE INDEX "product_slug_idx" ON "Product"("slug");
 

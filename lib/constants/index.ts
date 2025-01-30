@@ -3,3 +3,16 @@ export const SERVER_URL =
   process.env.NEXT_PUBLIC_SERVER_URL || 'http://localhost:3000';
 
   export const LATEST_PRODUCT_LIMIT = Number(process.env.PRODUCTS_LIMIT) || 4
+
+
+  export const signUpDefaultValues = {
+    name: '',
+    email: '',
+    password: '',
+    confirmPassword: '',
+  };
+
+  export const signInDefaultValues = {
+    email: 'admin@example.com',
+    password: '123456',
+  };
