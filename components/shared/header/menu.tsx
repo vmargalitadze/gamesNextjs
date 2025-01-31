@@ -3,7 +3,7 @@
 import { Button } from '@/components/ui/button';
 
 import Link from 'next/link';
-import { EllipsisVertical, ShoppingCart, User} from 'lucide-react';
+import { EllipsisVertical, ShoppingCart} from 'lucide-react';
 import {
   Sheet,
   SheetContent,
